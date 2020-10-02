@@ -5,35 +5,42 @@
 
         <h1>Binge-watch Calculator</h1>
         <form id='form'>
-            <label for='total_episodes'>
-                Total episodes in the show
-            </label>
-            <input type='number' id='total_episodes' value='30'>
-
-             <label for='episode_length'>
-                Avg. Episode length(in min)
-            </label>
-            <input type='number' id='episode_length' value='30'>
-
-            <label for='hours_per_day'>
-                How many hours per day will you binge?
-            </label>
-            <input type='number' id='hours_per_day' value='2'>
-
-            <label for='unit'>
-                Display results using : 
-            </label>
-            <select id="unit">
-                <option value="min">Minutes</option>
-                <option value="hours">Hours</option>
-                <option value="days">Days</option>
-            </select>
+            <div class='form_item'>
+                <label for='total_episodes'>
+                    Total episodes in the show
+                </label>
+                <input type='number' id='total_episodes' value='30'>
+            </div>
+            <div class='form_item'>
+                <label for='episode_length'>
+                    Avg. Episode length(in min)
+                </label>
+                <input type='number' id='episode_length' value='30'>
+            </div>
+            <div class='form_item'>
+                <label for='hours_per_day'>
+                    How many hours per day will you binge?
+                </label>
+                <input type='number' id='hours_per_day' value='2'>
+            </div>
+            <div class='form_item'>
+                <label for='unit'>
+                    Display results using : 
+                </label>
+                <select id="unit">
+                    <option value="min">Minutes</option>
+                    <option value="hours">Hours</option>
+                    <option value="days">Days</option>
+                </select>
+            </div>
         </form>
-        <div id='show_total_length'>
-            The show is x amount of units long
-        </div>
-        <div>
-            <p id='episodes_per_day'>if you watch x episodes per day, you will finish in x weeks and y days.</p>
+        <div class='display_flex'>
+            <div>
+                <p id='show_total_length'>The show is x amount of units long</p>
+            </div>
+            <div >
+                <p id='episodes_per_day'>if you watch x episodes per day, you will finish in x weeks and y days.</p>
+            </div>
         </div>
 
 

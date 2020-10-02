@@ -51,6 +51,6 @@ function calculateTimeToWatch() {
     const weeks_to_finish = (days_of_watching / 7).toFixed(0)
     const days_to_finish = (days_of_watching % 7).toFixed(0) 
     const episodes_per_day = (hrs_per_day_value * 60) / avg_length_value
-    per_day_calc_display.innerHTML = 'If you watch ' + episodes_per_day + ' episodes per day, you will finish in ' + weeks_to_finish + ' week(s) and ' + days_to_finish + ' day(s).' 
+    per_day_calc_display.innerHTML = 'If you watch ' + episodes_per_day.toFixed(2) + ' episodes per day, you will finish in ' + weeks_to_finish + ' week(s) and ' + days_to_finish + ' day(s).' 
 
 }
