@@ -29,18 +29,15 @@ function calculateLength() {
     const avg_length_value = parseFloat(avg_length_input.value)
     const units = unit_input.value 
     const show_total_length = total_episode_value * avg_length_value
-    if (units == 'Minutes'){
-        show_length_display.innerHTML = 'The show is ' + toString(show_total_length) + ' amount of ' + toString(units) + ' long!'
+    if (units == 'min'){
+        show_length_display.innerHTML = 'The entire show would be ' + show_total_length + ' ' + units + ' long!'
     }
-    else if (units == 'Hours'){
-        show_length_display.innerHTML = 'The show is ' + toString((show_total_length / 60)) + ' amount of ' + toString(units) + ' long!'
+    else if (units == 'hours'){
+        show_length_display.innerHTML = 'The entire show would be ' + (show_total_length / 60).toFixed(2) + ' ' + units + ' long!'
     }
-    else if (units == 'Days'){
-        show_length_display.innerHTML = 'The show is ' + toString((show_total_length / 60 / 24)) + ' amount of ' + toString(units) + ' long!'
+    else if (units == 'days'){
+        show_length_display.innerHTML = 'The entire show would be ' + (show_total_length / 60 / 24).toFixed(2) + ' ' + units + ' long!'
     }
-    console.log(show_total_length)
+    
 }
-calculateLength()
-
-
 //defining episodes per day calculation function
